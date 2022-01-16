@@ -49,14 +49,15 @@ $(function () {
     arrows: true,
     prevArrow: $('.sc_research .prev_btn'),
     nextArrow: $('.sc_research .next_btn'),
-    appendDots: $('.sc_research .pagination_bullets'),
+    dots: true,
+    appendDots: $('.sc_research .dot_pagination'),
     accessibility: true,
   });
 
   $('.sc_research .research_slider_wrap').on('afterChange', function(){
     let curPage = $('.sc_research .research_slider_wrap').slick('slickCurrentSlide') + 1;
     console.log(curPage);
-    $('.research_slider_area .control_area .pagination_fraction .cur').text('0' + curPage);
+    $('.research_slider_area .fraction_pagination .cur').text('0' + curPage);
   });
 
 
