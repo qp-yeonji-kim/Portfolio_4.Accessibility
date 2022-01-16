@@ -41,6 +41,25 @@ $(function () {
       $('.main_vis .notice_area .control_area .play_btn').removeClass('on');
   });
 
+  $('.sc_research .research_slider_wrap').slick({
+    infinite: true,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: '284px',
+    arrows: true,
+    prevArrow: $('.sc_research .prev_btn'),
+    nextArrow: $('.sc_research .next_btn'),
+    appendDots: $('.sc_research .pagination_bullets'),
+    accessibility: true,
+  });
 
-  /* 코드 끝 하루 끝 */
+  $('.sc_research .research_slider_wrap').on('afterChange', function(){
+    let curPage = $('.sc_research .research_slider_wrap').slick('slickCurrentSlide') + 1;
+    console.log(curPage);
+    $('.research_slider_area .control_area .pagination_fraction .cur').text('0' + curPage);
+  });
+
+
+
+  /* end */
 })
