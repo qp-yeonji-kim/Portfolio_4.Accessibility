@@ -47,3 +47,31 @@
 	height: 100vh;
 	overflow: hidden;
 }
+
+.btn_more{
+	position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: transform .3s;
+}
+
+.btn_more:hover,
+.btn_more:focus {
+  transform: rotate(360deg);
+}
+
+.btn_more::before,
+.btn_more::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background: #969696;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn_more::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}

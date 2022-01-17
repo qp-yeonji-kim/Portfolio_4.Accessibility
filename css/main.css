@@ -251,8 +251,6 @@ main .main_vis {
   font-size: 1.250em;
   line-height: 1.5em;
   font-weight: 500;
-  /*  */
-  /* 왜 안먹힘? */
   letter-spacing: -0.05em;
   color: #fff;
   text-align: center;
@@ -623,36 +621,9 @@ main .main_vis {
   background-position: center;
 }
 
-.sc_community_article .btn_more {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  transition: transform .3s;
-}
 .sc_community_article .sc_press .btn_more {
   right: 27px;
   top: 32px;
-}
-
-.sc_community_article .btn_more:hover,
-.sc_community_article .btn_more:focus {
-  transform: rotate(360deg);
-}
-
-.sc_community_article .btn_more::before,
-.sc_community_article .btn_more::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 1px;
-  background: #969696;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.sc_community_article .btn_more::after {
-  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .sc_community_article .sc_info {
@@ -1221,9 +1192,12 @@ section > .title + .sub_txt {
 .sc_security .content_area{
   max-width: 1680px;
   margin: 0 auto;
+  overflow: hidden;
+}
+.sc_security .content_area >*{
+  float: left;
 }
 .sc_security .content_area .radiation_live{
-  float: left;
   width: 650px;
   min-height: 565px;
   padding: 30px 40px;
@@ -1269,7 +1243,7 @@ section > .title + .sub_txt {
   padding: 0 100px 0 40px;
 }
 
-.sc_security .environmental_rad dl{
+.sc_security .radiation_live .environmental_rad{
   padding-top: 0;
 }
 .sc_security .environmental_rad dt{
@@ -1437,10 +1411,121 @@ section > .title + .sub_txt {
   background: #173561;
 }
 
+.sc_security .radiation_info{
+  width: calc(100% - 690px);
+  overflow: hidden;
+}
+.sc_security .radiation_info > *{
+  float: left;
+  position: relative;
+  width: calc((100% - 60px)/3);
+  min-height: 285px;
+  padding: 35px 40px;
+}
+.sc_security .radiation_info >*::after{
+  content: '';
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+  width: 90px;
+  height: 65px;
+  background-image: url('../images/i_sc_security.png');
+  background-repeat: no-repeat;
+}
+.sc_security .radiation_info .monitoring{
+  background: linear-gradient(to right,#459ecf,#4d99ce);
+}
+.sc_security .radiation_info .monitoring::after{
+  background-position: 0 0;
+}
+.sc_security .radiation_info .manage{
+  margin: 0 30px;
+  background: linear-gradient(to right,#0ba494,#099b9d);
+}
+.sc_security .radiation_info .manage::after{
+  background-position: -90px 0;
+}
+.sc_security .radiation_info .prevent{
+  background: linear-gradient(to right,#5762aa,#6b60a0);
+}
+.sc_security .radiation_info .prevent::after{
+  background-position: -180px 0;
+}
 
-.sc_security .content_area .radiation_info{}
+.sc_security .radiation_info .operate, .sc_security .radiation_info .safety{
+  width: calc((100% - 30px)/2);
+  min-height: 250px;
+  margin-top: 35px;
+}
+.sc_security .radiation_info .operate{
+  background: linear-gradient(to right,#236d9e,#28558d);
+}
+.sc_security .radiation_info .operate::after{
+  width: calc(100% - 70px);
+  height: calc(100% - 80px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/i_sc_security_operate.png') no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+  pointer-events : none;
+}
+.sc_security .radiation_info .safety{
+  margin-left: 30px;
+  background: #fff;
+}
 
+.sc_security .radiation_info a{
+  display: block;
+}
+.sc_security .radiation_info h4{
+  min-height: 60px;
+  font-size: 1.375em;
+  font-weight: 500;
+  line-height: 1.3636em;
+  letter-spacing: -0.04545em;
+  color: #fff;
+}
+.sc_security .radiation_info a:hover p, .sc_security .radiation_info a:focus p{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.sc_security .radiation_info p{
+  margin-top: 15px;
+  font-weight: 300;
+  line-height: 1.625em;
+  letter-spacing: -0.03125em;
+  word-break: keep-all;
+  color: #f4f6fa;
+}
 
+.sc_security .radiation_info .safety a h4, .sc_security .radiation_info .safety a p{
+  color: #16213c;
+}
+
+.sc_security .radiation_info .safety .img_wrap{
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  width: 188px;
+  height: 141px;
+}
+
+.sc_security .radiation_info .safety .img_wrap{
+  object-fit: cover;
+}
+
+.sc_security .radiation_info .btn_more{
+  right: 35px;
+  bottom: 25px;
+}
+.sc_security .radiation_info .btn_more::before, .sc_security .radiation_info .btn_more::after{
+  background: #eee;
+}
+.sc_security .radiation_info a:hover .btn_more, .sc_security .radiation_info a:focus .btn_more{
+  transform: rotate(360deg);
+}
 
 
 
