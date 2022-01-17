@@ -60,7 +60,12 @@ $(function () {
     $('.research_slider_area .fraction_pagination .cur').text('0' + curPage);
   });
 
-
+  $('.participate_list .dept2 a').on('focus', function(){
+    $(this).parents('.participate_list >li').addClass('on');
+  });
+  $('.participate_list .dept2 a').on('blur', function(){
+    $(this).parents('.participate_list >li').removeClass('on');
+  });
 
   /* end */
 })
