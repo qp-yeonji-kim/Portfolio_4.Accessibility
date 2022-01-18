@@ -1,5 +1,4 @@
 main .main_vis {
-  position: relative;
   height: 750px;
   margin-bottom: 30px;
 }
@@ -10,7 +9,6 @@ main .main_vis {
   height: 100%;
 }
 
-/* 보통 height: 100%로 하면 알아서 relative 부모에 맞춰지는데 안그럼 */
 .main_vis_wrap .content {
   position: relative;
   left: 0;
@@ -425,7 +423,6 @@ main .main_vis {
 
 .main_vis .notice_area .radiation_rate_area .radiation_rate {
   right: 13px;
-
 }
 
 .main_vis .notice_area .radiation_rate_area .radiation_rate a {
@@ -445,8 +442,7 @@ main .main_vis {
   font-size: 12px;
   color: rgba(203, 203, 203, 0.85);
 }
-
-.sc_community_article {
+.sc_community_article .inner {
   max-width: 1680px;
   margin: 0 auto 40px;
 }
@@ -1664,35 +1660,156 @@ section > .title + .sub_txt {
 }
 .participate_list .dept2 li a:hover strong, .participate_list .dept2 li a:focus strong{
   color: #ffe13e;
-
 }
 
+.option_nav_area{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60px;
+	height: 100vh;
+}
+.option_nav_area .nav_wrap{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+.option_nav_area .menu_nav li a{
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	background-color: rgba(54, 57, 65, .7);
+	font-size: 0.875em;
+	line-height: 1.4285em;
+	letter-spacing: -0.03571em;
+	color: rgba(254, 254, 254, .75);
+	transition: all .3s;
+}
+.option_nav_area .menu_nav li a:hover, .option_nav_area .menu_nav li a:focus{
+	color: #fff;
+	background: #19388f;
+}
+.option_nav_area .menu_nav li a.on{
+	padding: 17px 0 15px;
+	font-size: 0.938em;
+	line-height: 1.3333em;
+	letter-spacing: -0.03333em;
+	color: #fff;
+	background: #19388f;
+}
+.option_nav_area .menu_nav li a.on::after{
+	content: '';
+	position: absolute;
+	right: 5px;
+	top: 17px;
+	width: 5px;
+	height: 5px;
+	background: #e63229;
+}
+.option_nav_area .sns_nav{
+	margin-top: 40px;
+}
+.option_nav_area .sns_nav li a{
+	position: relative;
+	display: block;
+	padding: 4px 0 3px;
+	background-color: rgba(54, 57, 65, .7);
+	transition: background .3s;
+}
+.option_nav_area .sns_nav li:nth-child(1) a:hover,
+.option_nav_area .sns_nav li:nth-child(1) a:focus{
+	background-color: #43970e;
+}
+.option_nav_area .sns_nav li:nth-child(2) a:hover,
+.option_nav_area .sns_nav li:nth-child(2) a:focus{
+	background-color: #4867aa;
+}
+.option_nav_area .sns_nav li:nth-child(3) a:hover,
+.option_nav_area .sns_nav li:nth-child(3) a:focus{
+	background-color: #1da1f2;
+}
+.option_nav_area .sns_nav li:nth-child(4) a:hover,
+.option_nav_area .sns_nav li:nth-child(4) a:focus{
+	background-color: #f40000;
+}
 
+.option_nav_area .sns_nav i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.option_nav_area .sns_nav .sns_blogger i{
+	background-image: url('../images/i_blog.png');
+}
+.option_nav_area .sns_nav .sns_facebook i{
+	background-image: url('../images/i_facebook.png');
+}
+.option_nav_area .sns_nav .sns_twitter i{
+	background-image: url('../images/i_twitter.png');
+}
+.option_nav_area .sns_nav .sns_youtube i{
+	background-image: url('../images/i_youtube.png');
+}
+.option_nav_area .quick_nav{
+	margin-top: 40px;
+	margin-left: -30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-
+.option_nav_area .quick_nav a{
+	display: block;
+	width: 90px;
+	height: 70px;
+	padding: 13px 0 3px 13px;
+	text-align: left;
+	font-size: 1.0em;
+	letter-spacing: -0.05em;
+	border-radius: 5px 0 0 5px;
+	color: #fff;
+}
+.option_nav_area .quick_nav li:nth-child(1) a{
+	background-color: #19703a;
+}
+.option_nav_area .quick_nav li:nth-child(2) a{
+	background-color: #303c7c;
+}
+.option_nav_area .quick_nav li:nth-child(1) a:hover, .option_nav_area .quick_nav li:nth-child(1) a:focus{
+	background-color: #115129;
+}
+.option_nav_area .quick_nav li:nth-child(2) a:hover, .option_nav_area .quick_nav li:nth-child(2) a:focus{
+	background-color: #232b57;
+}
+.option_nav_area .quick_nav strong{
+	display: block;
+	font-weight: 600;
+	letter-spacing: -0.1em;
+}
+.option_nav_area .quick_nav span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.75rem;
+	font-weight: 300;
+	margin-top: 6px;
+}
+.option_nav_area .quick_nav i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 21px;
+	height: 21px;
+	margin-top: 6px;
+	margin-left: 5px;
+	line-height: 1.45em;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	background: url('../images/i_arrow_small_w.png') no-repeat;
+	background-position: center;
+	background-size: 8px 6px;
+	transform: rotate(-90deg);
 }
 
 @keyframes move_down {
