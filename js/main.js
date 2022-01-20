@@ -60,11 +60,26 @@ $(function () {
   $('.header .menu_btn').on('click', function(){
     $('.header .menu_area, main').addClass('on');
     $('body').addClass('hidden');
+    $('.header').addClass('off');
   });
 
   $('.header .menu_area .close_menu_btn').on('click', function(){
     $('.header .menu_area, main').removeClass('on');
     $('body').removeClass('hidden');
+    $('.header').removeClass('off');
+  });
+
+  $('.header .menu_area .close_menu_btn').on('keydown', function(e){
+    if(e.keyCode === 9){
+      $('.header .menu_area .lang').focus();
+    }
+  });
+
+  $('.header .menu_area .lang').on('keydown', function(e){
+    if (e.keyCode === 9 && e.shiftKey ){
+      $('.header .menu_area .close_menu_btn').focus();
+
+    }
   });
 
   $('.main_vis .down_btn_wrap .down_btn').click(function () {
@@ -118,13 +133,13 @@ $(function () {
   });
 
   $('.main_vis .notice_area .control_area .play_btn').click(function () {
-    $('.main_vis .main_vis_wrap').slick('slickPlay');
+    $('.main_vis .notice_area .content_wrap').slick('slickPlay');
     $(this).addClass('on');
     $('.main_vis .notice_area .control_area .pause_btn').removeClass('on');
   });
 
   $('.main_vis .notice_area .control_area .pause_btn').click(function () {
-    $('.main_vis .main_vis_wrap').slick('slickPause');
+    $('.main_vis .notice_area .content_wrap').slick('slickPause');
     $(this).addClass('on');
     $('.main_vis .notice_area .control_area .play_btn').removeClass('on');
   });
@@ -148,19 +163,19 @@ $(function () {
     $('.research_slider_area .fraction_pagination .cur').text('0' + curPage);
   });
 
-  $('.participate_list .dept2 a').on('focus', function () {
-    $(this).parents('.participate_list >li').addClass('on');
-  });
-  $('.participate_list .dept2 a').on('blur', function () {
-    $(this).parents('.participate_list >li').removeClass('on');
-  });
-
   $('.sc_security .safety a').on('keydown', function(e){
     if(e.keyCode === 9){
       $('html, body').animate({
         scrollTop: participateTop
       }, 500)
     }
+  });
+
+  $('.participate_list .dept2 a').on('focus', function () {
+    $(this).parents('.participate_list >li').addClass('on');
+  });
+  $('.participate_list .dept2 a').on('blur', function () {
+    $(this).parents('.participate_list >li').removeClass('on');
   });
 
   $('footer .family_site_wrap > ul > li > a').on('click', function (e) {

@@ -348,7 +348,11 @@ main .main_vis {
 
 .main_vis .notice_area .content>a {
   display: block;
+  width: 785px;
   height: 100%;
+}
+.main_vis .notice_area .content>a:focus {
+  outline: #b93e18 solid 2px;
 }
 
 .main_vis .notice_area .content .inner {
@@ -357,6 +361,7 @@ main .main_vis {
   transform: translateY(-50%);
   height: 20px;
   font-weight: 700;
+/*   background: hotpink; */
 }
 
 .main_vis .notice_area .content .data {
@@ -1315,6 +1320,9 @@ main .main_vis {
 .sc_security .radiation_live dt a {
   display: block;
 }
+.sc_security .radiation_live .rad_waste dt a {
+  padding: 15px 0;
+}
 
 .sc_security .radiation_live .dt_main {
   display: block;
@@ -1431,10 +1439,10 @@ main .main_vis {
 .sc_security .dl_waste dd .data_wrap em {
   display: block;
   padding-left: 60px;
-  font-size: 15.6px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 25.35px;
-  letter-spacing: -0.4875px;
+  line-height: 30.8568px;
+  letter-spacing: -0.85704px;
   text-align: right;
   color: #82cfe5;
 }
@@ -1446,6 +1454,7 @@ main .main_vis {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   width: 95px;
+  height: 24px;
   padding: 5px 0 0 15px;
   font-size: 24px;
   font-weight: 700;
@@ -1456,7 +1465,8 @@ main .main_vis {
 
 .sc_security .dl_waste dd .changement i {
   display: block;
-  position: relative;
+  position: absolute;
+  top: 0;
   width: 23px;
   height: 26px;
 }
@@ -1486,6 +1496,7 @@ main .main_vis {
 .sc_security .dl_waste dd .changement span {
   position: absolute;
   margin-left: 4px;
+  margin-top: 4px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -1493,6 +1504,7 @@ main .main_vis {
 
 .sc_security .radiation_live .operate {
   padding: 0;
+  height: 60px;
   margin-top: 20px;
   border-bottom: none;
 }
@@ -1503,7 +1515,7 @@ main .main_vis {
   padding: 15px 0;
   font-size: 18px;
   font-weight: 700;
-  line-height: 25.0002px;
+  line-height: 40px;
   letter-spacing: -0.75006px;
   text-align: center;
   color: #fff;
@@ -1518,7 +1530,7 @@ main .main_vis {
   margin: 0;
   font-weight: 700;
   font-size: 22px;
-  line-height: 24.9986px;
+  line-height: 40px;
   color: #fff;
   letter-spacing: -0.9999px;
   text-align: center;
@@ -1905,7 +1917,9 @@ main .main_vis {
   transform: translateY(-50%);
   text-align: center;
 }
-
+.option_nav_area .menu_nav li {
+  margin-top: 1px;
+}
 .option_nav_area .menu_nav li a {
   position: relative;
   display: block;
@@ -1949,6 +1963,9 @@ main .main_vis {
 
 .option_nav_area .sns_nav {
   margin-top: 40px;
+}
+.option_nav_area .sns_nav li{
+  margin-top: 1px;
 }
 
 .option_nav_area .sns_nav li a {
@@ -2009,7 +2026,9 @@ main .main_vis {
   margin-top: 40px;
   margin-left: -30px;
 }
-
+.option_nav_area .quick_nav li{
+  margin-top: 1px;
+}
 .option_nav_area .quick_nav a {
   display: block;
   width: 90px;
