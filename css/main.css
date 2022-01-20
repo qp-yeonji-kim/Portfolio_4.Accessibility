@@ -277,11 +277,11 @@ main .main_vis {
   opacity: 0;
 }
 
-.main_vis .down_btn_wrap .down_btn i:first-child {
+.main_vis .down_btn_wrap .down_btn i:nth-child(1) {
   animation: move_down 2s linear infinite;
 }
 
-.main_vis .down_btn_wrap .down_btn i:last-child {
+.main_vis .down_btn_wrap .down_btn i:nth-child(2) {
   animation: move_down 2s 1s linear infinite;
 }
 
