@@ -254,7 +254,7 @@ main .main_vis {
 }
 
 .main_vis .down_btn_wrap .down_btn {
-  position: relaitve;
+  position: relative;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
