@@ -1034,6 +1034,10 @@ footer .company_info .info_wrap .fnb li a {
   color: #fff;
 }
 
+footer .company_info .info_wrap .fnb li a:hover, footer .company_info .info_wrap .fnb li a:focus{
+  text-decoration: underline;
+}
+
 footer .company_info .info_wrap .fnb li:first-child a {
   padding-top: 3px;
   font-weight: 700;
@@ -1062,6 +1066,9 @@ footer .company_info .info_wrap .copyright_wrap {
 
 footer .company_info .info_wrap .address>* {
   display: inline-block;
+}
+footer .company_info .info_wrap .address> a:hover, footer .company_info .info_wrap .address> a:focus{
+  text-decoration: underline;
 }
 
 footer .company_info .address .call_num,

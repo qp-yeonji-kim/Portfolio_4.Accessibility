@@ -635,7 +635,6 @@ main .main_vis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-bottom: 1px solid transparent;
 }
 
 .sc_community_article .sc_press .sub_content .content strong::before {
@@ -650,7 +649,7 @@ main .main_vis {
 
 .sc_community_article .sc_press .sub_content .content a:hover strong,
 .sc_community_article .sc_press .sub_content .content a:focus strong {
-  border-color: #555;
+  text-decoration: underline;
 }
 
 .sc_community_article .sc_press .sub_content .content .date {
