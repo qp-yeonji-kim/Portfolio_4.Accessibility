@@ -29,7 +29,6 @@ section>.title::before {
   position: absolute;
   top: 0;
   left: 50%;
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 35px;
   height: 1px;
@@ -63,9 +62,7 @@ main .main_vis {
   top: 0;
   width: 100%;
   height: 750px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: no-repeat center / cover;
 }
 
 .main_vis_wrap .content::after {
@@ -109,7 +106,7 @@ main .main_vis {
   line-height: 60px;
   letter-spacing: -2.5px;
   color: #fff;
-  text-shadow: 0 1px 2px rgb(0 0 0 / 68%);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .68);
   z-index: 10;
 }
 
@@ -133,7 +130,6 @@ main .main_vis {
   width: 100%;
   left: 0;
   top: 50%;
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -142,9 +138,7 @@ main .main_vis {
   width: 74px;
   height: 74px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, .1) no-repeat;
-  background-position: center;
-  background-size: 26px 48px;
+  background: rgba(255, 255, 255, .1) no-repeat center / 26px 48px;
   transition: .3s all;
 }
 
@@ -193,15 +187,11 @@ main .main_vis {
 }
 
 .main_vis .control_area .play_pause_control .play_btn {
-  background: url('../images/i_play_w.svg') no-repeat;
-  background-size: 10px 12px;
-  background-position: center;
+  background: url('../images/i_play_w.svg') no-repeat /center 10px 12px;
 }
 
 .main_vis .control_area .play_pause_control .pause_btn {
-  background: url('../images/i_pause_w.svg') no-repeat;
-  background-size: 12px 13px;
-  background-position: center;
+  background: url('../images/i_pause_w.svg') no-repeat center /12px 13px;
 }
 
 .main_vis .control_area .play_pause_control .play_btn.on,
@@ -270,9 +260,7 @@ main .main_vis {
   width: 40px;
   height: 20px;
   transform: translate(-50%, -50%);
-  background: url('../images/i_arrow_down_s_w.svg') no-repeat;
-  background-position: center;
-  background-size: 14px;
+  background: url('../images/i_arrow_down_s_w.svg') no-repeat center/ 14px;
   opacity: 0;
 }
 
@@ -350,6 +338,7 @@ main .main_vis {
   width: 785px;
   height: 100%;
 }
+
 .main_vis .notice_area .content>a:focus {
   outline: #b93e18 solid 2px;
 }
@@ -360,7 +349,6 @@ main .main_vis {
   transform: translateY(-50%);
   height: 20px;
   font-weight: 700;
-/*   background: hotpink; */
 }
 
 .main_vis .notice_area .content .data {
@@ -449,8 +437,6 @@ main .main_vis {
   overflow: hidden;
 }
 
-.main_vis .notice_area .radiation_rate_area>* {}
-
 .main_vis .notice_area .radiation_rate_area .title {
   position: absolute;
   top: 50%;
@@ -503,7 +489,7 @@ main .main_vis {
   display: block;
   margin-top: 2px;
   font-size: 11px;
-  color: rgba(203, 203, 203, 0.85);
+  color: rgba(203, 203, 203, .85);
 }
 
 .sc_community_article .inner_area {
@@ -621,9 +607,7 @@ main .main_vis {
   margin-right: 5px;
   line-height: 23.9904px;
   vertical-align: top;
-  background: url('../images/i_clock_b.svg') no-repeat;
-  background-size: 14.5px;
-  background-position: center;
+  background: url('../images/i_clock_b.svg') no-repeat center/ 14.5px;
 }
 
 .sc_community_article .sc_press .sub_content {
@@ -688,9 +672,7 @@ main .main_vis {
   margin-right: 5px;
   line-height: 23.9988px;
   vertical-align: top;
-  background: url('../images/i_clock_g.svg') no-repeat;
-  background-size: 14.5px;
-  background-position: center;
+  background: url('../images/i_clock_g.svg') no-repeat center /14.5px;
 }
 
 .sc_community_article .sc_press .btn_more {
@@ -1010,6 +992,7 @@ main .main_vis {
   word-wrap: break-word;
   color: #414141;
   -webkit-line-clamp: 3;
+  -moz-box-orient: vertical;
   -webkit-box-orient: vertical;
   word-break: keep-all;
 }
@@ -1095,13 +1078,12 @@ main .main_vis {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   width: 414px;
   height: 285px;
   right: 0;
   padding: 50px 40px;
   background-color: rgba(30, 55, 121, 0.9);
-  box-shadow: 0 14px 25px rgb(0 0 0 / 40%);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, .4);
   opacity: 0;
   transition: opacity .5s .5s;
 }
@@ -1143,7 +1125,8 @@ main .main_vis {
   transition: background .3s;
 }
 
-.sc_research .research_slider_wrap li a:focus .more, .sc_research .research_slider_wrap li a:hover .more {
+.sc_research .research_slider_wrap li a:focus .more,
+.sc_research .research_slider_wrap li a:hover .more {
   background: rgba(230, 61, 10, .4);
 }
 
@@ -1165,9 +1148,7 @@ main .main_vis {
   display: block;
   width: 17.5px;
   height: 20px;
-  background: url('../images/i_arrow_small_w.png') no-repeat;
-  background-size: 12px;
-  background-position: center;
+  background: url('../images/i_arrow_small_w.png') no-repeat center /12px;
   transform: rotate(-90deg);
 }
 
@@ -1272,9 +1253,7 @@ main .main_vis {
 
 .sc_security {
   padding: 80px 0 60px;
-  background: url('../images/bg_security.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url('../images/bg_security.jpg') no-repeat center /cover;
 }
 
 .sc_security .content_area {
@@ -1321,6 +1300,7 @@ main .main_vis {
 .sc_security .radiation_live dt a {
   display: block;
 }
+
 .sc_security .radiation_live .rad_waste dt a {
   padding: 15px 0;
 }
@@ -1453,7 +1433,6 @@ main .main_vis {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   width: 95px;
   height: 24px;
   padding: 5px 0 0 15px;
@@ -1600,8 +1579,7 @@ main .main_vis {
   left: 40px;
   width: 90px;
   height: 65px;
-  background-image: url('../images/i_sc_security.png');
-  background-repeat: no-repeat;
+  background-image: url('../images/i_sc_security.png') no-repeat;
 }
 
 .sc_security .radiation_info .safety::after {
@@ -1650,9 +1628,7 @@ main .main_vis {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/i_sc_security_operate.png') no-repeat;
-  background-size: contain;
-  background-position: 100% 50%;
+  background: url('../images/i_sc_security_operate.png') no-repeat 100% 50% / contain;
   pointer-events: none;
 }
 
@@ -1708,9 +1684,7 @@ main .main_vis {
   right: 36px;
   width: 188px;
   height: 141px;
-  background: url('../images/i_safe_communication.jpg') no-repeat;
-  background-position: center;
-  background-size: contain;
+  background: url('../images/i_safe_communication.jpg') no-repeat center/ contain;
 }
 
 .sc_security .radiation_info .btn_more {
@@ -1730,9 +1704,7 @@ main .main_vis {
 
 .sc_participate {
   padding: 70px 0 100px;
-  background: url('../images/bg_participate.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url('../images/bg_participate.jpg') no-repeat center/ cover;
   color: #fff;
 }
 
@@ -1789,7 +1761,7 @@ main .main_vis {
   height: 100%;
   background: transparent;
   border: 1px solid rgba(231, 235, 237, 0.73);
-  box-shadow: 0 13px 40px rgb(0 0 0 / 35%);
+  box-shadow: 0 13px 40px rgba(0, 0, 0, .35);
   opacity: 0.2;
   pointer-events: none;
 }
@@ -1918,9 +1890,11 @@ main .main_vis {
   transform: translateY(-50%);
   text-align: center;
 }
+
 .option_nav_area .menu_nav li {
   margin-top: 1px;
 }
+
 .option_nav_area .menu_nav li a {
   position: relative;
   display: block;
@@ -1965,7 +1939,8 @@ main .main_vis {
 .option_nav_area .sns_nav {
   margin-top: 40px;
 }
-.option_nav_area .sns_nav li{
+
+.option_nav_area .sns_nav li {
   margin-top: 1px;
 }
 
@@ -2027,9 +2002,11 @@ main .main_vis {
   margin-top: 40px;
   margin-left: -30px;
 }
-.option_nav_area .quick_nav li{
+
+.option_nav_area .quick_nav li {
   margin-top: 1px;
 }
+
 .option_nav_area .quick_nav a {
   display: block;
   width: 90px;
