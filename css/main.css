@@ -187,7 +187,7 @@ main .main_vis {
 }
 
 .main_vis .control_area .play_pause_control .play_btn {
-  background: url('../images/i_play_w.svg') no-repeat /center /10px 12px;
+  background: url('../images/i_play_w.svg') no-repeat center /10px 12px;
 }
 
 .main_vis .control_area .play_pause_control .pause_btn {
