@@ -255,7 +255,6 @@ main .main_vis {
 
 .main_vis .down_btn_wrap .down_btn {
   position: relaitve;
-  display: block;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -904,7 +903,8 @@ main .main_vis {
   height: 105px;
 }
 
-.sc_community_article .sc_sns h4 p {
+.sc_community_article .sc_sns h4 span {
+  display: block;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1131,33 +1131,34 @@ main .main_vis {
   color: #d9e4fe;
 }
 
-.sc_research .research_slider_wrap li .more_btn {
+.sc_research .research_slider_wrap li .more {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
-  display: blcok;
-  padding: 0 15px;
+  padding: 5px 15px;
   width: 126px;
   height: 34px;
-  border: 2px solid rgba(255, 255, 255, .5);
-}
-
-.sc_research .research_slider_wrap li .more_btn:focus {
-  outline: #e83e0a dashed 2px;
-}
-
-.sc_research .research_slider_wrap li .more_btn>* {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.sc_research .research_slider_wrap li .more_btn span {
-  font-size: 15.008px;
-  line-height: 34px;
-  letter-spacing: -0.500217px;
   color: #fff;
+  border: 2px solid rgba(255, 255, 255, .5);
+  transition: background .3s;
+}
+
+.sc_research .research_slider_wrap li a:focus .more, .sc_research .research_slider_wrap li a:hover .more {
+  background: rgba(230, 61, 10, .4);
+}
+
+.sc_research .research_slider_wrap li .more>* {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sc_research .research_slider_wrap li .more span {
+  font-size: 15.008px;
+  line-height: 24px;
   margin-right: 10px;
 }
 
-.sc_research .research_slider_wrap li .more_btn i {
+.sc_research .research_slider_wrap li .more i {
   position: absolute;
   top: 5px;
   right: 4px;
