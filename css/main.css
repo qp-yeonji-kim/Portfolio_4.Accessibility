@@ -206,13 +206,17 @@ main .main_vis {
 
 .main_vis .control_area .slick-dots {
   height: 30px;
-  padding: 4px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
 .main_vis .control_area .slick-dots li {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
+  height: 10px;
+}
+
+.main_vis .control_area .slick-dots li button{
+  display: block;
 }
 
 .main_vis .control_area .slick-dots li.slick-active button {
