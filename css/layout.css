@@ -9,6 +9,7 @@ body {
   font-style: normal;
   color: #555;
   min-width: 1900px;
+  overflow-x: hidden;
 }
 
 #skip {
