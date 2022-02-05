@@ -1690,7 +1690,8 @@ main .main_vis {
   background: url('../images/i_safe_communication.jpg') no-repeat center/ contain;
 }
 
-.sc_security .radiation_info .btn_more {
+.sc_security .radiation_info .
+ {
   right: 35px;
   bottom: 25px;
 }

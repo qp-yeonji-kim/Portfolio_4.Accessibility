@@ -31,6 +31,10 @@
 		url("../font/NotoSansKR-Bold.otf") format("opentype");
 }
 
+br{
+	font-family: Dotum, '돋움';
+}
+
 .blind{
   position: absolute;
   width: 1px;
@@ -66,10 +70,10 @@
   position: absolute;
   width: 25px;
   height: 1px;
-  background: #969696;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background: #969696;
 }
 
 .btn_more::after {
@@ -102,3 +106,4 @@ main .sc_community_article.sub_line::after{
 main .sc_security.sub_line::after{
 	background:	#ccd8ed;
 }
+
