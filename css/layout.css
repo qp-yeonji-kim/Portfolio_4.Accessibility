@@ -3,12 +3,12 @@
 }
 
 body {
-  font-family: NtSansKR, '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum';
+  min-width: 1900px;
+  font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum';
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   color: #555;
-  min-width: 1900px;
   overflow-x: hidden;
 }
 
@@ -220,7 +220,6 @@ header.header.active .btn_wrap .lang_btn i {
 
 .header .btn_wrap .lang_btn span {
   display: inline-block;
-  margin-top: 3px;
   vertical-align: top;
   line-height: 23px;
 }
@@ -545,7 +544,7 @@ header.header.active .menu_btn span {
 .header .menu_area .util_area .lang {
   display: block;
   padding: 3px 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.5px;
   line-height: 27px;
   color: #151823;
@@ -1040,8 +1039,7 @@ footer .company_info .info_wrap .fnb li a:hover, footer .company_info .info_wrap
 }
 
 footer .company_info .info_wrap .fnb li:first-child a {
-  padding-top: 3px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ff7f5c;
 }
 
