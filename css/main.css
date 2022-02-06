@@ -523,7 +523,7 @@ main .main_vis {
 
 .sc_community_article .sc_press .main_content a {
   display: block;
-  height: 247px;
+  min-height: 247px;
   overflow: hidden;
 }
 
@@ -1396,7 +1396,9 @@ main .main_vis {
   font-size: 12.0015px;
   letter-spacing: -0.500103px;
 }
-
+.sc_security .radiation_live .dl_waste{
+  padding: 15px 20px;
+}
 .sc_security .dl_waste dd a {
   display: block;
 }
@@ -1405,7 +1407,7 @@ main .main_vis {
   position: relative;
 }
 
-.sc_security .dl_waste dd .data_wrap+.data_wrap {
+.sc_security .dl_waste dd .data_wrap +.data_wrap {
   margin-top: 14px;
 }
 
@@ -1423,8 +1425,9 @@ main .main_vis {
 .sc_security .dl_waste dd .data_wrap em {
   display: block;
   padding-left: 60px;
-  font-size: 28px;
-  font-weight: 700;
+  font-family: NanumSquare;
+  font-size: 24px;
+  font-weight: 900;
   line-height: 30.8568px;
   letter-spacing: -0.85704px;
   text-align: right;
@@ -1481,13 +1484,14 @@ main .main_vis {
   margin-left: 4px;
   left: 50%;
   top: 50%;
+  font-family: NanumSquare;
   transform: translate(-50%, -50%);
 }
 
 .sc_security .radiation_live .operate {
   padding: 0;
   height: 60px;
-  margin-top: 20px;
+  margin-top: 15px;
   border-bottom: none;
 }
 
@@ -1615,7 +1619,7 @@ main .main_vis {
 .sc_security .radiation_info .safety {
   width: calc((100% - 30px)/2);
   min-height: 250px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .sc_security .radiation_info .operate {
