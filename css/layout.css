@@ -65,31 +65,30 @@ header.header.active {
 .header::after {
   content: '';
   position: absolute;
-  top: 98px;
+  top: 90px;
   left: 0;
   height: 1px;
   width: 100%;
-  background-color: transparent;
+  background-color: #f3f5f7;
   z-index: 11;
   transition: all .3s;
   opacity: 0;
 }
 
 header.header.on::before {
-  height: 448px;
+  height: 440px;
 }
 
 header.header.active.on::before {
   height: 417px;
 }
 
-body header.header.on::after {
-  background-color: #f3f5f7;
+body header.header.on::after, body header.header.active::after {
   opacity: 1;
 }
 
 body header.header.active::after {
-  top: 67px;
+  top: 68px;
 }
 
 body header.header.off::after {
@@ -303,11 +302,15 @@ header.header.on .nav::after {
   padding: 15px 25px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 19.9998px;
   letter-spacing: -0.75006px;
   white-space: nowrap;
   color: #fff;
   transition: all .3s;
+}
+
+header.header.active .gnb>li>a{
+  padding: 15px 25px 24px;
 }
 
 .header .gnb>li:hover a,
@@ -567,7 +570,6 @@ header.header.active .menu_btn span {
 }
 
 .header .menu_area .util_area .lang span:nth-child(2) {
-  margin-top: 5px;
   display: block;
 }
 
@@ -627,7 +629,7 @@ header.header.active .menu_btn span {
   height: calc(100% - 20px);
   padding: 60px 0;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 36px;
   letter-spacing: -1.5px;
   text-align: center;
@@ -676,16 +678,18 @@ header.header .all_menu > li:nth-child(5) .dept2>li{
 .header .all_menu .dept2 >li >a {
   display: block;
   padding: 10px 0;
-  font-family: NtSansKR;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 19.9998px;
   letter-spacing: -0.75006px;
   color: #333;
   word-break: keep-all;
 }
+.header .all_menu .dept2 a:hover{
+  text-decoration: underline;
+}
 
-.header .all_menu .dept3>li {
+.header .all_menu .dept3 > li {
   position: relative;
   padding-left: 15px;
 }
