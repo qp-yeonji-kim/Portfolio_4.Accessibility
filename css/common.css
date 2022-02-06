@@ -1,39 +1,4 @@
-@font-face {
-	font-family: NtSansKR;
-	font-weight: 300;
-	font-style: normal;
-	src: url("../font/NotoSansKR-Light.eot");
-	src: url("../font/NotoSansKR-Light.eot#iefix") format("embedded-opentype"),
-		url("../font/NotoSansKR-Light.woff") format("woff"),
-		url("../font/NotoSansKR-Light.woff2") format("woff2"),
-		url("../font/NotoSansKR-Light.otf") format("opentype");
-}
-
-@font-face {
-	font-family: NtSansKR;
-	font-weight: 400;
-	font-style: normal;
-	src: url("../font/NotoSansKR-Regular.eot");
-	src: url("../font/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"),
-		url("../font/NotoSansKR-Regular.woff") format("woff"),
-		url("../font/NotoSansKR-Regular.woff2") format("woff2"),
-		url("../font/NotoSansKR-Regular.otf") format("opentype");
-}
-
-@font-face {
-	font-family: NtSansKR;
-	font-weight: 700;
-	font-style: normal;
-	src: url("../font/NotoSansKR-Bold.eot");
-	src: url("../font/NotoSansKR-Bold.eot#iefix") format("embedded-opentype"),
-		url("../font/NotoSansKR-Bold.woff") format("woff"),
-		url("../font/NotoSansKR-Bold.woff2") format("woff2"),
-		url("../font/NotoSansKR-Bold.otf") format("opentype");
-}
-
-br{
-	font-family: Dotum, '돋움';
-}
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,regular,500,700,900);
 
 .blind{
   position: absolute;
